@@ -11,55 +11,64 @@
 
         /* Section 1 */   
 
-        var name = "Joe";
+        var name = "Joe"; //déclare une variable dont le nom est name dont la valeur est un string "Joe".
         var city = 'London';
         var age = 32;
         var isRed = true;
         var isOld = age > 80;
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; //déclare une variable qui s'appelle previousJobs qui a comme valeur un tableau.
 
-        function info(height, weight) {
-            if (height > 180) {
+        function info(height, weight) { //déclare une fonction "info" qui prend en paramètres deux variables, height et weight.
+            if (height > 180) { //c'est une condition "if", si la variable height a une valeur supérieure a 180, ce qui se trouve entre les crochets se passe (print "Vous êtes grand")
                 console.log('Vous êtes grand');
             }
-            if (weight < 0) {
+            if (weight < 0) { //
                 console.log('oups, there is a problem');
             } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
+                console.log('Are you that slim ?') //condition "else if", si le "if" juste au dessus n'est pas respecté.
+            } else { //condition si aucunes des conditions au dessus est rempli
                 console.log('Good !')
             }
         }
 
-        info(165, 45);
+        info(165, 45); //on appelle la fonction "info" avec comme paramètres des valeurs en dur (height=175, weight=86).
 
-        var myHeight = 175;
+        var myHeight = 175; //on déclare deux variables avec des valeurs, qu'on utilisera dans la fonction info, donc sans rentrer des valeurs en dur mais en prenant les valeurs des variables.
         var myWeight = 86;
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight); //voir ligne 37
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100); //on prend les variables et donc leurs valeurs
 
-        function toUpper(variable) {
-            return variable.toUpperCase();
+        function toUpper(variable) { //on crée une fonction "toUpper" avec comme paramètre une variable.
+            return variable.toUpperCase(); //cette fonction retourne la variable à laquelle on applique la méthode (classe) toUpperCase
         }
 
-        var upperName = toUpper(name);
+        var upperName = toUpper(name); //on déclare une variable upperName, qui a pour valeur la fonction toUpper avec comme paramètre la variable name, qui vaut "Joe".  Si on demande un print, on aurait "Joe" tout en majuscule "JOE"
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) { //itération for= on déclare "i", qui vaut 0.  condition= tant que "i" est strictement inférieur à 3, on incrémente 1 à "i".
+            console.log(previousJobs[i]); //tant que la condition de la boucle for est vrai, on exécute le traitement entres les crochets; on affiche la ligne 1 du tableau previousJobs.
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquele Joe vit.
+
+        //On ouvre la page html concernée via WebStorm, on va sur la console (F12), et on tape "console.log(city);"
+        //"London" va s'afficher sur la console du navigateur.
 
         // afficher si Joe est roux ou pas.
 
+        //console.log(isRed); dans la console du navigateur, le résultat est donc "true" (variable ligne 17).
+
         /* Section 3 */
 
+        //Décommenter la ligne puis recharger la page.
+
         // console.log(myVariable);
+
+        //La variable "myVariable" n'existe pas, donc on a un bug au niveau de la console du navigateur.
 
         </script>
 
